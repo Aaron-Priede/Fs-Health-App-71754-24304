@@ -1,0 +1,259 @@
+/* General container styling */
+.booked-services-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header styling */
+.booked-services-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.booked-services-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.booked-services-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Loader styling */
+.booked-services-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #007bff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Error message styling */
+.booked-services-error {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.error-message {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  max-width: 500px;
+}
+
+.error-message h3 {
+  color: #dc3545;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.error-message button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.error-message button:hover {
+  background-color: #0056b3;
+}
+
+/* Empty state styling */
+.no-bookings {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.empty-state {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  max-width: 500px;
+}
+
+.empty-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.empty-state h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.empty-state p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.browse-services-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.browse-services-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Booked services grid */
+.booked-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Booking card styling */
+.booking-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.booking-header h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin: 0;
+}
+
+.status-badge {
+  background-color: #ffc107;
+  color: #212529;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Detail rows styling */
+.booking-details {
+  margin-bottom: 20px;
+}
+
+.detail-row {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.detail-icon {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #6c757d;
+  width: 24px;
+  text-align: center;
+}
+
+.detail-row strong {
+  display: block;
+  font-size: 0.9rem;
+  color: #495057;
+  margin-bottom: 2px;
+}
+
+.detail-row p {
+  margin: 0;
+  color: #212529;
+}
+
+/* Button styling */
+.booking-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.cancel-booking-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.cancel-booking-btn:hover {
+  background-color: #c82333;
+}
+
+.cancel-booking-btn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .booked-services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .booking-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .status-badge {
+    margin-top: 10px;
+  }
+}

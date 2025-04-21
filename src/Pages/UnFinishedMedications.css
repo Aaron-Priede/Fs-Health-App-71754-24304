@@ -1,0 +1,142 @@
+/* UnfinishedMedications.css */
+
+.medications-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .medications-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  .medications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .medication-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .medication-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .medication-header {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .medication-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  
+  .medication-details {
+    padding: 1.25rem;
+    background-color: #f8fafc;
+  }
+  
+  .medication-detail {
+    display: flex;
+    margin-bottom: 0.75rem;
+    align-items: baseline;
+  }
+  
+  .detail-label {
+    flex: 0 0 100px;
+    font-weight: 600;
+    color: #64748b;
+  }
+  
+  .detail-value {
+    flex: 1;
+    color: #334155;
+  }
+  
+  .status-unfinished {
+    color: #e74c3c;
+    font-weight: 600;
+  }
+  
+  .medication-dates {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+  }
+  
+  .medication-date {
+    display: flex;
+    margin-bottom: 0.5rem;
+  }
+  
+  .date-label {
+    flex: 0 0 100px;
+    font-weight: 600;
+    color: #64748b;
+  }
+  
+  .date-value {
+    flex: 1;
+    color: #334155;
+  }
+  
+  .medications-loading {
+    text-align: center;
+    padding: 3rem;
+    color: #3498db;
+    font-size: 1.2rem;
+  }
+  
+  .medications-error {
+    text-align: center;
+    padding: 2rem;
+    color: #e74c3c;
+    background-color: #feebc8;
+    border-radius: 8px;
+    border-left: 4px solid #e74c3c;
+    margin: 2rem auto;
+    max-width: 600px;
+  }
+  
+  .medications-empty {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 3rem;
+    text-align: center;
+    color: #64748b;
+    border: 1px dashed #cbd5e1;
+  }
+  
+  @media (max-width: 768px) {
+    .medications-list {
+      grid-template-columns: 1fr;
+    }
+    
+    .medications-container {
+      padding: 1rem;
+    }
+    
+    .medication-detail {
+      flex-direction: column;
+    }
+    
+    .detail-label {
+      margin-bottom: 0.25rem;
+    }
+  }

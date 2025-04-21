@@ -1,0 +1,39 @@
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent; /* Light blue background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.navbar1-left,
+.navbar1-middle,
+.navbar1-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar1-middle {
+    justify-content: center;
+}
+
+.navbar1-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar1-link:hover {
+    color: #fff;
+    background-color: #007bff; /* Blue hover effect */
+    border-radius: 4px;
+}

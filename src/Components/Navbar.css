@@ -1,0 +1,34 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure the navbar spans the full width of the layout */
+    padding: 1rem;
+    background-color: lightgreen; /* Slightly lighter pink (#d1005b) to white gradient */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    position: sticky; /* Sticks to the top while scrolling */
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other elements */
+    overflow: hidden; /* Prevent content overflow */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.navbar-left,
+.navbar-middle,
+.navbar-right {
+    display: flex;
+    gap: 1rem; /* Add spacing between links */
+    flex-wrap: nowrap; /* Prevent wrapping of links */
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.navbar-link:hover {
+    color: #ff69b4; /* Light pink on hover */
+}
